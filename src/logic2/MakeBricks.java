@@ -15,10 +15,7 @@ public class MakeBricks {
             return false;
         } else if (goal % (5 * big) <= small) {
             return true;
-        } else if (goal % 5 <= small) {
-            return true;
-        }
-        return false;
+        } else return goal % 5 <= small;
     }
 
     public static boolean makeBricksV2(int small, int big, int goal) {
