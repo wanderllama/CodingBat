@@ -8,7 +8,7 @@ public class MakeBricks {
       This is a little harder than it looks and can be done without any loops*/
 
 
- public boolean makeBricks(int small, int big, int goal) {
+ public static boolean makeBricks(int small, int big, int goal) {
   if(small >= goal) {
     return true;
   } else if (big == 0) {
