@@ -9,8 +9,8 @@ import java.util.ArrayList;
 public class WithoutString {
 
     public static void main(String[] args) {
-        String base = "FISh is THiS";
-        String remove = "is";
+        String base = "abxxxab";
+        String remove = "xx";
 
         ArrayList<Integer> list = new ArrayList<>();
         for (int i = 0; i <= base.length() - remove.length(); i++) {
@@ -22,7 +22,7 @@ public class WithoutString {
                             count++;
                         }
                     }
-                    if (count == remove.length()) {
+                    if (count == remove.length() && !list.contains(i)) {
                         int indexAdd = i;
                         while (count > 0) {
                             list.add(indexAdd);
