@@ -9,8 +9,9 @@ import java.util.ArrayList;
 public class WithoutString {
 
     public static void main(String[] args) {
-        String base = "abxxxab";
-        String remove = "xx";
+        //for testing
+        String base = "hello there";
+        String remove = "e";
 
         ArrayList<Integer> list = new ArrayList<>();
         for (int i = 0; i <= base.length() - remove.length(); i++) {
@@ -28,8 +29,11 @@ public class WithoutString {
                             list.add(indexAdd);
                             indexAdd++;
                             count--;
+                            continue;
                         }
                     }
+                } else if (remove.length() == 1) {
+                    list.add(i);
                 }
             }
         }
@@ -39,6 +43,5 @@ public class WithoutString {
                 send += base.charAt(i);
             }
         }
-        System.out.println("list = " + list);
     }
 }
