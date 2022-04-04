@@ -1,4 +1,4 @@
-package String3;
+package string3;
 
 /*Given two strings, base and remove, return a version of the base string where all instances of the
 remove string have been removed (not case sensitive). You may assume that the remove string is
