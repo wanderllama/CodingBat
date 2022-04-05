@@ -47,4 +47,3 @@ public int[] zeroMax(int[] nums) {
   }
   return nums;
 }
-
