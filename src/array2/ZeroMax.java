@@ -4,9 +4,24 @@ package array2;
 import java.util.Arrays;
 
 public class ZeroMax {
-    public static void main(String[] args) {
-
-        int[] nums = {7,0,1,0,0,7};
+    public int[] zeroMax(int[] nums) {
+        if(nums.length == 0) {
+            int[] x = {};
+            return x;
+        }
+        if(nums[nums.length - 1] == 7) {
+            int o = -1;
+            for(int i = 0; i < nums.length; i++) {
+                if(nums[i] % 2 == 1 && nums[i] > o) {
+                    o = nums[i];
+                }
+            }
+            for(int i = 0; i < nums.length; i++) {
+                if(nums[i] == 0) {
+                    nums[i] = o;
+                }
+            }
+        }
         for(int i = 0; i < nums.length; i++) {
             if(nums[i] == 0) {
                 int odd = -1;
@@ -25,6 +40,6 @@ public class ZeroMax {
                 }
             }
         }
-        System.out.println(Arrays.toString(nums));
+        return nums;
     }
 }
