@@ -4,6 +4,7 @@ solutions for medium and hard catagories finished
 ***string-2 and string-3  
 ***logic-1 and logic-2  
 ***AP-1
+***Map-1  
   
 more coming  
-maps-1 -> Started 4/7/22
+maps-2 -> Started 4/8/22
