@@ -10,8 +10,8 @@ public class Count8 {
         }
         if(n % 10 == 8) {
             count = 1;
-            if(n % 10 % 10 == 8) {
-                count = 2;
+            if(n / 10 % 10 == 8) {
+                count += 1;
             }
         } else {
             count = 0;
