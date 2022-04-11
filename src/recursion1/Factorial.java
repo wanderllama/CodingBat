@@ -11,10 +11,4 @@ public class Factorial {
         return n * factorial(n - 1);
     }
 }
-/*
-    //alternate -> switching the if statement to be the reverse and the return outside of the if statement is the stop condition'
-        if(n2 > 1) {
-            return fibonacci(n2 - 1) + fibonacci(n2 - 2);
-        }
-        return n2;
-    }*/
+
