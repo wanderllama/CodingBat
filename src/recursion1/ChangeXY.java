@@ -4,12 +4,9 @@ package recursion1;
 
 public class ChangeXY {
     public String changeXY(String str) {
-        if(str.isEmpty()) {
+        if(str.indexOf("x") == -1) {
             return str;
         }
-        if(str.charAt(0) == 'x') {
-            str = str.replace('x' , 'y');
-        }
-        return str.substring(0);
+        return str.substring(0 , str.indexOf("x")) + "y" + changeXY(str.substring(str.indexOf("x") + 1));
     }
 }
