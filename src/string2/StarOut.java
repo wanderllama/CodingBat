@@ -13,6 +13,9 @@ public class StarOut {
   for(int i = 0; i < arr.length; i++) {
         if(str.charAt(i) == '*') {
             arr[i]++;
+            if(str.length() == 1) {
+                break;
+            }
             if(i == 0) {
                 arr[i + 1]++;
                 continue;
