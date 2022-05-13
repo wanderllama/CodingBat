@@ -28,9 +28,6 @@ public class OneTwo {
 
     //second approach
     public String oneTwo(String str) {
-        if (str.length() < 3) {
-            return "";
-        }
         String send = "";
         while(str.length() >= 3) {
             send += str.substring(1 , 3) + str.charAt(0);
